@@ -1,6 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/*Positive anything is better than negative nothing*/
+
+/*0-positive_or_negative.c*/
 /**
  * main - print whether the number stored in the variable is positive or negative
  *
