@@ -1,14 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdio.h>
+/**
+ *
+ * main - A program that prints all possible combinations of single-digit numbers.
+ *
+ * Return = Always 0 (Success)
+ */
 
 /* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	putchar('\n');
+	}
 	return (0);
 }
