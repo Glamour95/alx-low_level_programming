@@ -9,11 +9,13 @@
  */
 int main(void)
 {
-	int i = 0;
+	int i;
 
-	while (i++ < 100 && putchar(i / 10 + '0') && putchar(i % 10 + '0'))
+	for (i = 0; i < 10; i++)
 	{
-	if (i < 100)
+		putchar(i + '0');
+
+	if (i < 9)
 	{
 		putchar(',');
 		putchar(' ');
