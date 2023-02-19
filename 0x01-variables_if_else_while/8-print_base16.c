@@ -1,22 +1,29 @@
 #include <stdio.h>
-/**
- *
- * main - A program that prints all the numbers of base 16 in lowercase, followed by a new line. 
- *
- * Return = 0 (Success)
- */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point of the program
+ *
+ * Description: Prints all the numbers of base 16 in lowercase
+ * using the putchar function only three times.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int num;
-	char la;
+	char hex_digit = '0';
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
-
-	for (la = 'a'; la <= 10; la++)
-		putchar(la);
+	while (hex_digit <= 'f')
+        {
+		if (hex_digit <= '9' || hex_digit >= 'a')
+		{
+			putchar(hex_digit);
+			hex_digit++;
+		}
+		else
+		{
+			hex_digit++;
+		}
+	}
 
 	putchar('\n');
 
