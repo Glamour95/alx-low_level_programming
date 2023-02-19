@@ -13,7 +13,7 @@ int main(void)
 	char hex_digit = '0';
 
 	while (hex_digit <= 'f')
-        {
+	{
 		if (hex_digit <= '9' || hex_digit >= 'a')
 		{
 			putchar(hex_digit);
