@@ -1,27 +1,18 @@
 #include <stdio.h>
+
 /**
  * main - A program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
  *
- * Return: Always: 0 (Success)
-*/
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char c;
+	int i;
 
-	char d;
-
-	c = 'a';
-	d = 'd';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(d <= 'Z')
-		{
-			putchar(d);
-			d++;
-		}
+	for (i = 97; i < 123; i++)
+		putchar(i);
+	for (i = 65; i < 91; i++)
+		putchar(i);
+	putchar('\n');
 	return (0);
 }
