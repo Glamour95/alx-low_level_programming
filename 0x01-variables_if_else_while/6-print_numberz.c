@@ -1,14 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n;
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	/* Print all single digit numbers of base 10 */
+	for (i = 0; i < 10; i++)
+	{
+	putchar(i + '0');
+	}
+	putchar('\n');
+
 	return (0);
 }
