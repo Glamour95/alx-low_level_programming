@@ -1,6 +1,17 @@
+/**
+ * main - entry point
+ *
+ * Description: Prints the size of various types on the machine architecture
+ * and automatically detects the machine architecture to determine the size of
+ * the pointer.
+ *
+ * Return: Always 0 (Success)
+ */
+
 #include <stdio.h>
 
-int main() {
+int main(void)
+{
 	printf("Size of char: %ld byte(s)\n", sizeof(char));
 	printf("Size of short: %ld byte(s)\n", sizeof(short));
 	printf("Size of int: %ld byte(s)\n", sizeof(int));
@@ -10,6 +21,6 @@ int main() {
 	printf("Size of double: %ld byte(s)\n", sizeof(double));
 	printf("Size of long double: %ld byte(s)\n", sizeof(long double));
 	printf("Size of pointer: %ld byte(s)\n", sizeof(void *));
-  
-	return 0;
+
+	return (0);
 }
