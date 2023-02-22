@@ -1,2 +1,1 @@
-#!/bin/bash
-start coding with c today
+0x03-debugging
